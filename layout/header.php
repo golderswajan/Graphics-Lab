@@ -14,6 +14,6 @@
         <title>Graphics Lab</title>
     </head>
 
-    <body>
+    <body style="margin: 20px">
 
 

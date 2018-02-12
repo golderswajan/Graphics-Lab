@@ -59,7 +59,7 @@
 
     </script>
 
-<div style="margin-left: 20px">
+<div>
 
     <p id="points"></p>
 
