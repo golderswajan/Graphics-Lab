@@ -34,13 +34,12 @@ include_once './layout/header.php';
         }
     });
     function showResult(){
-        var xx= $('#inputX').val();
         var r= $('#inputY').val();
         if(r>offset) {
-            alert("Radious is beyound our dimension. Please use Y less than "+(offset+1));
+            alert("Radious is beyound our dimension. Please use Radius less than "+(offset+1));
             return;
         }
-        var x=xx,y=r,d=3-2*r;
+        var x=0,y=r,d=3-2*r;
 
         while(x<=y){
             plotPixel(x,y);
@@ -88,10 +87,9 @@ include_once './layout/header.php';
         ?>
     </table>
 </div>
-<div style="margin-top: 20px">
+<div style="margin-top: 20px;margin-left: 30px">
     <div class="row">
-        <div class="col-md-2"><input type="number" id="inputX" class="form-control" placeholder="Please Input X" min="0" value="0"></div>
-        <div class="col-md-2"><input type="number" id="inputY" class="form-control" placeholder="Please Input Y" min="0"></div>
+        <div class="col-md-3"><input type="number" id="inputY" class="form-control" placeholder="Please Input Radius" min="0"></div>
         <div class="col-md-2"> <input type="button" value="Show Result" onclick="showResult()" class="btn btn-success"></div>
     </div>
 
